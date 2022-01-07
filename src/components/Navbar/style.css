@@ -1,0 +1,14 @@
+.navbar-container {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  height: 4rem;
+  justify-content: space-between;
+  margin: 1rem;
+  width: calc(100% - 2rem);
+}
+
+.navbar-title,
+.navbar-links a {
+  margin: 0 2rem;
+}
