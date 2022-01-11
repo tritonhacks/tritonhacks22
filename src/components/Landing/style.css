@@ -41,6 +41,9 @@ TODOS:
   color: var(--brown);
   font-size: 3.5rem;
   text-shadow: 2px 1px 7px black;
+  transform: translateY(25px);
+  opacity: 0;
+  animation: fade-in 1s cubic-bezier(0.075, 0.82, 0.165, 1) 0.2s 1 forwards;
 }
 
 #landing-buttons {
@@ -49,6 +52,9 @@ TODOS:
   flex-wrap: nowrap;
   width: 95%;
   margin: 0 auto;
+  transform: translateY(25px);
+  opacity: 0;
+  animation: fade-in 1.5s cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s 1 forwards;
 }
 
 .landing-button {
@@ -59,10 +65,14 @@ TODOS:
   min-width: 15rem;
   color: var(--brown);
   border: 3px solid var(--brown);
-  border-radius: 20px;
+  border-radius: 13px;
   cursor: pointer;
   background: var(--sand);
   box-shadow: 2px 2px 7px black;
+}
+
+.landing-button:hover {
+  background: var(--sand-light);
 }
 
 /* Midground = static images */
@@ -126,7 +136,6 @@ TODOS:
 
 #top-wave {
   z-index: 3;
-  transition: 0.5;
   opacity: 0;
   top: -70%;
   animation: top-wave-in 2s cubic-bezier(0.075, 0.82, 0.165, 1) 1 forwards;

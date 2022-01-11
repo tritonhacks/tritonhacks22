@@ -10,7 +10,7 @@
   position: fixed;
   top: 0;
   z-index: 10;
-  background: linear-gradient(180deg, #ffffffb4, #ffffff00);
+  background: linear-gradient(180deg, #ffffff7c, #ffffff00);
 }
 
 .navbar-title,
@@ -18,4 +18,7 @@
   margin: 0 2rem;
   font-weight: bolder;
   font-size: 1.5em;
+  transform: translateY(-50px);
+  opacity: 0;
+  animation: fade-in 2s cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s 1 forwards;
 }
