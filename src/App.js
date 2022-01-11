@@ -1,12 +1,10 @@
 import Navbar from "./components/Navbar";
 import Landing from "./components/Landing";
 import About from "./components/About";
-import Tracks from "./components/Tracks";
+import Prizes from "./components/Prizes";
 import PastProjects from "./components/PastProjects";
 import Sponsors from "./components/Sponsors";
 import Footer from "./components/Footer";
-
-import "./App.css";
 
 const App = () => {
   return (
@@ -14,7 +12,7 @@ const App = () => {
       <Navbar />
       <Landing />
       <About />
-      <Tracks />
+      <Prizes />
       <PastProjects />
       <Sponsors />
       <Footer />

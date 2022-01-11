@@ -1,7 +1,7 @@
 import "./style.css";
 
-const Tracks = () => {
+const Prizes = () => {
   return <div></div>;
 };
 
-export default Tracks;
+export default Prizes;
