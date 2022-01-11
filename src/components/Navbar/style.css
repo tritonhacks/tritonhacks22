@@ -4,11 +4,18 @@
   flex-flow: row wrap;
   height: 4rem;
   justify-content: space-between;
-  margin: 1rem;
-  width: calc(100% - 2rem);
+  margin: 0 0 1rem;
+  box-sizing: border-box;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  background: linear-gradient(180deg, #ffffffb4, #ffffff00);
 }
 
 .navbar-title,
 .navbar-links a {
   margin: 0 2rem;
+  font-weight: bolder;
+  font-size: 1.5em;
 }
