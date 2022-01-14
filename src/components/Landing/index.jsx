@@ -71,8 +71,7 @@ const Landing = () => {
           <></>
         ) : (
           <>
-            {" "}
-            ({/* middle wave */}
+            {/* middle wave */}
             <div id="mid-wave" className={`wave-container ${midFlip}`}>
               {waveSets[waveIdx].mid}
             </div>
