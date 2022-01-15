@@ -1,0 +1,23 @@
+#about-wrapper {
+  background: url("../../assets/crab.svg") 100% 10% no-repeat,
+    url("../../assets/starfish.svg") 0 95% no-repeat;
+  padding-bottom: 80px;
+}
+
+#about-content {
+  margin: 0 150px 0 120px;
+  padding-bottom: 80px;
+  padding-top: 20px;
+}
+
+#about-header {
+  font-family: "Quicksand";
+  color: #00bae9;
+  font-size: 64px;
+  margin-bottom: 0;
+}
+
+#about-paragraphs {
+  font-family: "Source Sans Pro";
+  font-size: 25px;
+}
