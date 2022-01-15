@@ -21,3 +21,27 @@
   opacity: 0;
   animation: fade-in 2s cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s 1 forwards;
 }
+
+.underline {
+  width: fit-content;
+  position: relative;
+  color: #fff;
+}
+
+.underline:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #fff;
+  transform-origin: bottom left;
+  transition: transform 0.25s ease-out;
+}
+
+.underline:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
