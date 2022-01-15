@@ -21,7 +21,7 @@ const Navbar = () => {
 
   const anchors = links.map((link) => {
     return (
-      <a id={link.id} href={`#${link.id}`} key={`nav${keys++}`}>
+      <a href={`#${link.id}`} key={`nav${keys++}`}>
         {link.displayText}
       </a>
     );

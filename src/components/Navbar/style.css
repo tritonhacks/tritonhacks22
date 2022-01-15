@@ -4,10 +4,9 @@
   flex-flow: row wrap;
   height: 4rem;
   justify-content: space-between;
-  margin: 0 0 1rem;
   box-sizing: border-box;
   width: 100%;
-  position: fixed;
+  position: absolute;
   top: 0;
   z-index: 10;
   background: linear-gradient(180deg, #ffffff7c, #ffffff00);
