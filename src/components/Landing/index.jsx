@@ -28,10 +28,10 @@ const Landing = () => {
       <div id="landing-fg">
         <h1 id="landing-title">TritonHacks 2022</h1>
         <div id="landing-btn-wrapper">
-          <a href="#" className="landing-btn">
+          <a href="#landing-wrapper" className="landing-btn">
             Apply
           </a>
-          <a href="#" className="landing-btn">
+          <a href="#landing-wrapper" className="landing-btn">
             Volunteer
           </a>
         </div>
