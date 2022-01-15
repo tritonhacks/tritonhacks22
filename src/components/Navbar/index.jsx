@@ -23,12 +23,7 @@ const Navbar = () => {
       </a>
       <div className="navbar-links">
         {links.map((link, key) => (
-          <a
-            id={link.id}
-            className="underline"
-            href={`#${link.id}`}
-            key={`nav${key}`}
-          >
+          <a className="underline" href={`#${link.id}`} key={`nav${key}`}>
             {link.displayText}
           </a>
         ))}

@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div id="about-wrapper">
       <div id="about-content">
-        <h1 id="about-header">ABOUT US</h1>
+        <h1 id="about">ABOUT US</h1>
         <svg
           width="313"
           height="15"
