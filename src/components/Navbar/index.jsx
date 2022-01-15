@@ -3,7 +3,6 @@ import "./style.css";
 let keys = 0;
 
 const Navbar = () => {
-  // Edit links here
   const links = [
     {
       id: "about",
@@ -19,20 +18,23 @@ const Navbar = () => {
     },
   ];
 
-  const anchors = links.map((link) => {
-    return (
-      <a id={link.id} href={`#${link.id}`} key={`nav${keys++}`}>
-        {link.displayText}
-      </a>
-    );
-  });
-
   return (
     <div className="navbar-container">
       <a href="/" className="navbar-title">
         TritonHacks
       </a>
-      <div className="navbar-links">{anchors}</div>
+      <div className="navbar-links">
+        {links.map((link) => (
+          <a
+            id={link.id}
+            className="underline"
+            href={`#${link.id}`}
+            key={`nav${keys++}`}
+          >
+            {link.displayText}
+          </a>
+        ))}
+      </div>
     </div>
   );
 };
