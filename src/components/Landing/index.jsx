@@ -26,16 +26,14 @@ const Landing = () => {
     <div id="landing-wrapper">
       {/* Foreground - text, buttons, etc */}
       <div id="landing-fg">
-        <div id="landing-fg-wrapper">
-          <h1 id="landing-title">TritonHacks 2022</h1>
-          <div id="landing-buttons">
-            <a href="." className="landing-button">
-              APPLY
-            </a>
-            <a href="." className="landing-button">
-              VOLUNTEER
-            </a>
-          </div>
+        <h1 id="landing-title">TritonHacks 2022</h1>
+        <div id="landing-btn-wrapper">
+          <a href="#" className="landing-btn">
+            Apply
+          </a>
+          <a href="#" className="landing-btn">
+            Volunteer
+          </a>
         </div>
       </div>
 
@@ -81,8 +79,7 @@ const Landing = () => {
             </div>
             {/* post wave */}
             <div id="post-wave" className={`wave-container ${postFlip}`}>
-              {" "}
-              className="wave-container" {waveSets[waveIdx].post}
+              {waveSets[waveIdx].post}
             </div>
           </>
         )}
