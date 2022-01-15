@@ -1,6 +1,4 @@
 import "./style.css";
-import Crab from "./png/crab.png"
-import Starfish from "./png/starfish.png"
 
 const About = () => {
   return <div id="about-wrapper">
