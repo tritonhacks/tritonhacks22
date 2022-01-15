@@ -1,0 +1,155 @@
+#landing-wrapper {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+#landing-fg,
+#landing-mg,
+#landing-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* Foreground = text, buttons, non-animated elements */
+#landing-fg {
+  z-index: 2;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#landing-title {
+  font-family: "Rock Salt", cursive;
+  padding: 0 2rem;
+  margin: 0;
+  color: var(--brown);
+  font-size: 3.5rem;
+  text-shadow: 2px 1px 7px black;
+  transform: translateY(25px);
+  opacity: 0;
+  animation: fade-in 1s cubic-bezier(0.075, 0.82, 0.165, 1) 0.2s 1 forwards;
+}
+
+#landing-btn-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  transform: translateY(25px);
+  opacity: 0;
+  animation: fade-in 1.5s cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s 1 forwards;
+}
+
+.landing-btn {
+  font-size: 2.3em;
+  padding: 1rem;
+  margin: 1rem;
+  min-width: 15rem;
+  color: var(--brown);
+  border: 3px solid var(--brown);
+  border-radius: 1rem;
+  cursor: pointer;
+  background: var(--sand);
+  box-shadow: 2px 2px 7px black;
+}
+
+.landing-btn:hover {
+  background: var(--sand-light);
+  box-shadow: 2px 2px 14px black;
+  transform: scale(1.02);
+}
+
+/* Midground = static images */
+#landing-mg {
+  z-index: 1;
+}
+
+/* Background = waves, sand */
+@keyframes top-wave-in {
+  to {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+@keyframes ocean-motion {
+  35% {
+    top: 0;
+    opacity: 1;
+  }
+  100% {
+    top: -7%;
+    opacity: 0;
+  }
+}
+
+@keyframes wet-sand {
+  35% {
+    top: 0;
+  }
+  50% {
+    top: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0;
+    opacity: 0;
+  }
+}
+
+#landing-bg {
+  z-index: 0;
+  overflow: hidden;
+}
+
+#landing-bg .wave-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+}
+
+#landing-bg .flip {
+  transform: scaleX(-1);
+}
+
+#landing-bg svg {
+  position: absolute;
+  left: 0;
+}
+
+#top-wave {
+  z-index: 3;
+  opacity: 0;
+  top: -70%;
+  animation: top-wave-in 2s cubic-bezier(0.075, 0.82, 0.165, 1) 1 forwards;
+}
+
+#mid-wave {
+  z-index: 2;
+  opacity: 0;
+  top: -50%;
+  animation: ocean-motion 5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s 1
+    forwards;
+}
+
+#bot-wave {
+  z-index: 1;
+  opacity: 0;
+  top: -30%;
+  animation: ocean-motion 5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s 1
+    forwards;
+}
+
+#post-wave {
+  z-index: 0;
+  opacity: 0;
+  top: -30%;
+  animation: wet-sand 5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s 1 forwards;
+}
