@@ -4,6 +4,7 @@ import About from "./components/About";
 import Prizes from "./components/Prizes";
 import PastProjects from "./components/PastProjects";
 import Sponsors from "./components/Sponsors";
+import Countdown from "./components/Countdown";
 import Footer from "./components/Footer";
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
       <Prizes />
       <PastProjects />
       <Sponsors />
+      <Countdown />
       <Footer />
     </div>
   );
