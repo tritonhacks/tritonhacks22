@@ -1,5 +1,5 @@
 #countdown-wrapper {
-    margin: 50px 120px;
+    /* margin: 50px 120px; */
     text-align: center;
 }
 
@@ -9,9 +9,9 @@
 }
 
 #timer{
-    margin: 0 80px;
+    flex-wrap: wrap;    
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 #timer p {
@@ -23,6 +23,7 @@
     background-color: var(--brown);
     border-radius: 20px;
     padding: 0 20px;
+    margin: 20px;
     width: 160px;
     height: 180px;
     box-shadow: 5px 10px 5px burlywood;
