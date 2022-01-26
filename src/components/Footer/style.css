@@ -1,0 +1,30 @@
+#h1{
+    font-style: "Quicksand";
+    font-size: 65px;
+    text-align: center;
+    margin-top: 0;
+    color: #000000;
+}
+
+#icon-box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon{
+    margin-left: 2.3rem;
+    margin-right: 2.3rem;
+}
+
+img{
+    width: 7.8rem;
+    height: 7.8rem;
+}
+
+#footer{
+    margin-top: 0;
+    margin-bottom: 3rem;
+}
