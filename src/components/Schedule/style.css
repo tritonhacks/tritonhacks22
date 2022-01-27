@@ -1,0 +1,23 @@
+#calendar{
+    display:flex;
+    justify-content: center;
+    margin: 0;
+}
+
+#schedule{
+    padding: 181px 0 181px 0;
+    background: url("../../assets/complete-wavy.svg") 50% 0% repeat;
+    /*
+    url("../../assets/complete-wavy.svg") right -921.33px;
+    */
+}
+
+#text{
+    margin: 0 0 87px 120px;
+}
+
+h1{
+    font-size: 65px;
+}
+
+
