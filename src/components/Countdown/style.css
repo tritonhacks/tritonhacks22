@@ -8,7 +8,7 @@
     font-size: 400%;
 }
 
-#timer{
+#timer {
     flex-wrap: wrap;    
     display: flex;
     justify-content: center;
@@ -19,7 +19,7 @@
     text-align: center;
 }
 
-.timer-element{
+.timer-element {
     background-color: var(--brown);
     border-radius: 20px;
     padding: 0 20px;
@@ -29,10 +29,11 @@
     box-shadow: 5px 10px 5px burlywood;
 }
 
-.num{
+.num {
     font-weight: 600;
 }
 
-.text{
+.text {
     letter-spacing: .2rem;
+    text-transform: uppercase;
 }
