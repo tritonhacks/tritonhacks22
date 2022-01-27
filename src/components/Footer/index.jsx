@@ -14,7 +14,7 @@ const Footer = () => {
       </div>
         <div id="icon-box">
             <div id="discord" className="icon">
-              <a href="" target="_blank" rel="noreferrer">
+              <a href="#footer" target="_blank" rel="noreferrer">
                 <img src={discord} alt="discord"/>
               </a>
             </div>
