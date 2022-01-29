@@ -7,7 +7,7 @@ const Prizes = () => {
            <h1 id="prize">Prize Categories</h1>
         <div id="prize-paragraphs">
            <p className="prize-field">
-            To be annouced 
+            To be announced 
           </p>
         </div>
       </div>
