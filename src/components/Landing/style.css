@@ -131,6 +131,21 @@
   animation: top-wave-in 2s cubic-bezier(0.075, 0.82, 0.165, 1) 1 forwards;
 }
 
+@media (max-width: 800px) {
+  #top-wave {
+    height: 300rem;
+  }
+  #mid-wave svg {
+    height: 25rem;
+  }
+  #bot-wave svg {
+    height: 30rem;
+  }
+  #post-wave svg {
+    height: 30rem;
+  }
+}
+
 #mid-wave {
   z-index: 2;
   opacity: 0;
