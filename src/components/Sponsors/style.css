@@ -39,6 +39,7 @@
 
 #sponsor-images img{
     height: 125px;
+    margin: 20px;
 }
 
 #partner-images{
@@ -47,5 +48,6 @@
 
 #partner-images img{
     height: 100px;
+    margin: 10px;
    
 }
