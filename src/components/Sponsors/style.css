@@ -27,17 +27,13 @@
 }
 
 #sponsor-images img {
-    height: 125px;
-    width: auto;
-    margin: 20px;
-}
-
-#partner-images {
-    margin: 40px 50px;
+    height: auto;
+    width: 30rem;
+    margin: 1rem;
 }
 
 #partner-images img {
-    height: 100px;
-    margin: 10px;
-    width: auto;
+    height: auto;
+    margin: 1rem;
+    width: 10rem;
 }
