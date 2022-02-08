@@ -23,7 +23,7 @@ const Landing = () => {
   }, []);
 
   return (
-    <div id="landing-wrapper">
+    <section id="landing-wrapper">
       {/* Foreground - text, buttons, etc */}
       <div id="landing-fg">
         <h1 id="landing-title">TritonHacks 2022</h1>
@@ -84,7 +84,7 @@ const Landing = () => {
           </>
         )}
       </div>
-    </div>
+    </section>
   );
 };
 

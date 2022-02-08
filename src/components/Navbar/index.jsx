@@ -8,7 +8,7 @@ const links = [
   },
   {
     id: "projects",
-    displayText: "Projects",
+    displayText: "Past Projects",
   },
   {
     id: "sponsors",

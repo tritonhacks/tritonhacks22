@@ -1,29 +1,29 @@
-#foot-header{
-    font-style: "Quicksand";
-    font-size: 64px;
-    text-align: center;
-    margin: 0 0 0 0;
-    color: #000000;
+#foot-header {
+  font-style: "Quicksand";
+  font-size: 64px;
+  text-align: center;
+  margin: 0 0 0 0;
+  color: #000000;
 }
 
-#icon-box{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+#icon-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
-.icon{
-    display: inline-block;
-    margin: 2.5rem;
+.icon {
+  display: inline-block;
+  margin: 2.5rem;
 }
 
-img{
-    width: 5rem;
-    height: 5rem;
+img {
+  width: 5rem;
+  height: 5rem;
 }
 
-#footer{
-    margin: 0rem 0rem 2rem 0rem;
+#footer {
+  margin: 0rem 0rem 2rem 0rem;
 }

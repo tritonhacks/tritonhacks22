@@ -1,39 +1,39 @@
 #countdown-wrapper {
-    /* margin: 50px 120px; */
-    text-align: center;
+  /* margin: 50px 120px; */
+  text-align: center;
 }
 
 #countdown {
-    text-transform: uppercase;
-    font-size: 400%;
+  text-transform: uppercase;
+  font-size: 400%;
 }
 
 #timer {
-    flex-wrap: wrap;    
-    display: flex;
-    justify-content: center;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
 }
 
 #timer p {
-    font-size: 200%;
-    text-align: center;
+  font-size: 200%;
+  text-align: center;
 }
 
 .timer-element {
-    background-color: var(--brown);
-    border-radius: 20px;
-    padding: 0 20px;
-    margin: 20px;
-    width: 160px;
-    height: 180px;
-    box-shadow: 5px 10px 5px burlywood;
+  background-color: var(--brown);
+  border-radius: 20px;
+  padding: 0 20px;
+  margin: 20px;
+  width: 160px;
+  height: 180px;
+  box-shadow: 5px 10px 5px burlywood;
 }
 
 .num {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .text {
-    letter-spacing: .2rem;
-    text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
 }

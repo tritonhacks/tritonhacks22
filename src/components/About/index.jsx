@@ -2,7 +2,7 @@ import "./style.css";
 
 const About = () => {
   return (
-    <div id="about-wrapper">
+    <section id="about-wrapper">
       <div id="about-content">
         <h1 id="about">ABOUT US</h1>
         <svg
@@ -43,7 +43,7 @@ const About = () => {
           </p>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
