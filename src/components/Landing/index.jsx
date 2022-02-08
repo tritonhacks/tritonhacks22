@@ -1,22 +1,25 @@
 import "./style.css";
 import { useState, useEffect } from "react";
-
-let waveSets;
+import sandCastle from "assets/castle.svg";
+import beachBall from "assets/beach-ball.svg";
+import surfboard from "assets/surfboards.svg";
+import bird from "assets/bird.svg";
+import shell1 from "assets/shell1.svg";
+import shell2 from "assets/shell2.svg";
+import fishDark from "assets/fish-dark.svg";
+import fishLight from "assets/fish-light.svg";
 
 const Landing = () => {
   const [waveIdx, setWaveIdx] = useState(0);
-  const [renderToggle, setRenderToggle] = useState(false);
-  const [midFlip, setMidFlip] = useState("");
-  const [postFlip, setBotFlip] = useState("");
+  const [midFlip, setMidFlip] = useState(false);
+  const [postFlip, setBotFlip] = useState(false);
 
   // wave animation every 5 seconds
   useEffect(() => {
     const waveAnim = setInterval(() => {
       setWaveIdx((old) => (old + 1) % waveSets.length);
-      setMidFlip(Math.random() <= 0.5 ? "" : "flip");
-      setBotFlip(Math.random() <= 0.5 ? "" : "flip");
-      setRenderToggle(true);
-      setRenderToggle(false);
+      setMidFlip(Math.random() <= 0.5);
+      setBotFlip(Math.random() <= 0.5);
     }, 5500);
 
     return () => clearInterval(waveAnim);
@@ -26,6 +29,9 @@ const Landing = () => {
     <section id="landing-wrapper">
       {/* Foreground - text, buttons, etc */}
       <div id="landing-fg">
+        <img src={fishDark} alt="Fish" id="fish-1" />
+        <img src={fishDark} alt="Fish" id="fish-2" />
+        <img src={fishLight} alt="Fish" id="fish-3" />
         <h1 id="landing-title">TritonHacks 2022</h1>
         <div id="landing-btn-wrapper">
           <a href="#landing-wrapper" className="landing-btn">
@@ -38,7 +44,14 @@ const Landing = () => {
       </div>
 
       {/* Midground - static images */}
-      <div id="landing-mg"></div>
+      <div id="landing-mg">
+        <img src={sandCastle} alt="Sand Castle" id="sandCastle" />
+        <img src={beachBall} alt="Beach Ball" id="beachBall" />
+        <img src={surfboard} alt="Surfboard" id="surfboard" />
+        <img src={bird} alt="Bird" id="bird" />
+        <img src={shell1} alt="Shell" id="shell1" />
+        <img src={shell2} alt="Shell" id="shell2" />
+      </div>
 
       {/* Background - animated waves */}
       <div id="landing-bg">
@@ -65,24 +78,30 @@ const Landing = () => {
           />
         </svg>
 
-        {renderToggle ? (
-          <></>
-        ) : (
-          <>
-            {/* middle wave */}
-            <div id="mid-wave" className={`wave-container ${midFlip}`}>
-              {waveSets[waveIdx].mid}
-            </div>
-            {/* bottom wave */}
-            <div id="bot-wave" className={`wave-container ${postFlip}`}>
-              {waveSets[waveIdx].bot}
-            </div>
-            {/* post wave */}
-            <div id="post-wave" className={`wave-container ${postFlip}`}>
-              {waveSets[waveIdx].post}
-            </div>
-          </>
-        )}
+        {/* middle wave */}
+        <div
+          key={`mid-${Math.random()}`}
+          id="mid-wave"
+          className={`move-wave wave-container ${midFlip && "flip"}`}
+        >
+          {waveSets[waveIdx].mid}
+        </div>
+        {/* bottom wave */}
+        <div
+          key={`bot-${Math.random()}`}
+          id="bot-wave"
+          className={`move-wave wave-container ${postFlip && "flip"}`}
+        >
+          {waveSets[waveIdx].bot}
+        </div>
+        {/* post wave */}
+        <div
+          key={`post-${Math.random()}`}
+          id="post-wave"
+          className={`wet-sand wave-container ${postFlip && "flip"}`}
+        >
+          {waveSets[waveIdx].post}
+        </div>
       </div>
     </section>
   );
@@ -90,7 +109,7 @@ const Landing = () => {
 
 export default Landing;
 
-waveSets = [
+const waveSets = [
   {
     mid: (
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="60 55 1444.51 500.21">
