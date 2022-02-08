@@ -150,21 +150,142 @@
   z-index: 2;
   opacity: 0;
   top: -50%;
-  animation: ocean-motion 5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s 1
-    forwards;
 }
 
 #bot-wave {
   z-index: 1;
   opacity: 0;
   top: -30%;
-  animation: ocean-motion 5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s 1
-    forwards;
 }
 
 #post-wave {
   z-index: 0;
   opacity: 0;
   top: -30%;
+}
+
+.move-wave {
+  animation: ocean-motion 5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s 1
+    forwards;
+}
+.wet-sand {
   animation: wet-sand 5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s 1 forwards;
+}
+
+#sandCastle,
+#beachBall,
+#surfboard,
+#bird,
+#shell1,
+#shell2,
+#fish-1,
+#fish-2,
+#fish-3 {
+  position: absolute;
+}
+
+#sandCastle {
+  top: 80%;
+  left: 50%;
+  height: 10rem;
+  width: 10rem;
+}
+
+#beachBall {
+  top: 75%;
+  left: 75%;
+  height: 10rem;
+  width: 10rem;
+}
+
+#surfboard {
+  left: -12rem;
+  top: 50%;
+  height: 50rem;
+  width: 50rem;
+}
+
+#bird {
+  left: 10%;
+  top: 50%;
+  height: 7rem;
+  width: 7rem;
+}
+
+#shell1 {
+  left: 2rem;
+  top: 42%;
+  transform: rotate(120deg);
+  height: 3rem;
+  width: 3rem;
+}
+
+#shell2 {
+  right: 10%;
+  top: 45%;
+  transform: rotate(100deg);
+  height: 4rem;
+  width: 4rem;
+}
+
+#fish-1 {
+  top: 5%;
+  right: 10%;
+  animation: 6s swim infinite;
+}
+
+#fish-2 {
+  top: 3%;
+  left: 20%;
+  animation: 5s fade infinite alternate-reverse;
+}
+
+#fish-3 {
+  top: 6%;
+  left: 60%;
+  width: 3rem;
+  height: 3rem;
+  animation: 3s bobbing infinite alternate-reverse;
+}
+
+@media (max-width: 750px) {
+  #sandCastle {
+    display: none;
+  }
+}
+
+@keyframes swim {
+  0% {
+    transform: translateX(-50px) scaleX(-1);
+  }
+  40% {
+    transform: translateX(50px) scaleX(-1);
+  }
+  50% {
+    transform: translateX(50px) scaleX(1);
+  }
+  90% {
+    transform: translateX(-50px) scaleX(1);
+  }
+  100% {
+    transform: translateX(-50px) scaleX(-1);
+  }
+}
+
+@keyframes bobbing {
+  0% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
 }
