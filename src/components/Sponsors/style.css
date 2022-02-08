@@ -2,20 +2,14 @@
     margin: 20px 0;
 }
 
-#sponsors-container {
+#sponsors-container, #partners-container {
     margin: 0 120px;
 }
 
 #sponsors, #partners {
     font-size: 64px;
 }
-#partners {
- margin: 20px 120px;
-}
 
-#partners-container {
-    margin: 80px 0;
-}
 
 #sponsor-us {
     font-family: "Mulish";
@@ -31,7 +25,7 @@
 #partner-images, #sponsor-images {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-content: center;
     align-items: center;
     text-align: center;
