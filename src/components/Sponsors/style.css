@@ -1,15 +1,10 @@
 #sponsors-wrapper {
-    margin: 20px 0;
-}
-
-#sponsors-container, #partners-container {
-    margin: 0 120px;
+    margin: 20px 120px;
 }
 
 #sponsors, #partners {
     font-size: 64px;
 }
-
 
 #sponsor-us {
     font-family: "Mulish";
@@ -25,7 +20,7 @@
 #partner-images, #sponsor-images {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     align-content: center;
     align-items: center;
     text-align: center;
