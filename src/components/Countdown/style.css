@@ -1,6 +1,8 @@
 #countdown-wrapper {
   /* margin: 50px 120px; */
   text-align: center;
+  padding: 0 2rem;
+
 }
 
 #countdown {
