@@ -17,6 +17,14 @@ ReactDOM.render(
           return null;
         }}
       />
+      <Route
+        exact
+        path="/volunteer"
+        component={() => {
+          window.location.href = 'https://tally.so/r/mBVg4m';
+          return null;
+        }}
+      />
     </Switch>
   </Router>,
   document.getElementById("root")

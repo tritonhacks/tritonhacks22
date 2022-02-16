@@ -37,9 +37,9 @@ const Landing = () => {
           <a href="/apply" className="landing-btn">
             Apply
           </a>
-          {/* <a href="/" className="landing-btn">
+          <a href="/volunteer" className="landing-btn">
             Volunteer
-          </a> */}
+          </a>
         </div>
       </div>
 
