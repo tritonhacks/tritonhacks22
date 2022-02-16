@@ -12,11 +12,11 @@ const App = () => {
     <div className="app-container">
       <Navbar />
       <Landing />
+      <Countdown />
       <About />
-      <Prizes />
+      {/* <Prizes /> */}
       <PastProjects />
       <Sponsors />
-      <Countdown />
       <Footer />
     </div>
   );

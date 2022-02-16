@@ -9,9 +9,9 @@ const Footer = () => {
     <section id="footer">
       <h1 id="foot-header">Contact Us</h1>
       <div id="icon-box">
-        <a href="#footer" target="_blank" rel="noreferrer" className="icon">
+        {/* <a href="#footer" target="_blank" rel="noreferrer" className="icon">
           <img src={discord} alt="discord" />
-        </a>
+        </a> */}
         <a
           href="https://www.facebook.com/triton.hacks"
           target="_blank"

@@ -13,7 +13,7 @@ ReactDOM.render(
         exact
         path="/apply"
         component={() => {
-          window.location.href = "https://tripetto.app/run/43KGDDA3I2";
+          window.location.href = 'https://tally.so/r/wg1odm';
           return null;
         }}
       />

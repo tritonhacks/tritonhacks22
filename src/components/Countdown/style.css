@@ -6,6 +6,7 @@
 #countdown {
   text-transform: uppercase;
   font-size: 400%;
+  color: #A5712E;
 }
 
 #timer {
@@ -20,13 +21,13 @@
 }
 
 .timer-element {
-  background-color: var(--brown);
+  background-color: var(--sand-shadow);
+  color: var(--brown);
   border-radius: 20px;
   padding: 0 20px;
   margin: 20px;
   width: 160px;
   height: 180px;
-  box-shadow: 5px 10px 5px burlywood;
 }
 
 .num {

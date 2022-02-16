@@ -1,8 +1,8 @@
 #landing-wrapper {
-  margin: 0;
+  margin: 0 0 10rem 0;
   padding: 0;
   width: 100%;
-  min-height: 100vh;
+  min-height: max(700px, 100vh);
 }
 
 #landing-fg,
@@ -31,7 +31,6 @@
   margin: 0;
   color: var(--brown);
   font-size: 3.5rem;
-  text-shadow: 2px 1px 7px black;
   transform: translateY(25px);
   opacity: 0;
   animation: fade-in 1s cubic-bezier(0.075, 0.82, 0.165, 1) 0.2s 1 forwards;
@@ -56,12 +55,10 @@
   border-radius: 1rem;
   cursor: pointer;
   background: var(--sand);
-  box-shadow: 2px 2px 7px black;
 }
 
 .landing-btn:hover {
   background: var(--sand-light);
-  box-shadow: 2px 2px 14px black;
   transform: scale(1.02);
 }
 
