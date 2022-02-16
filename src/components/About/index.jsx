@@ -22,7 +22,7 @@ const About = () => {
 
         <div id="about-paragraphs">
           <p>
-            TritonHacks is a virtual highschool hackathon aimed at encouraging
+            TritonHacks is an in-person highschool hackathon aimed at encouraging
             students from underserved and underrepresented communities of San
             Diego to pursue their interests in the computational fields. Many
             such students attend high-schools that don't have the necessary
