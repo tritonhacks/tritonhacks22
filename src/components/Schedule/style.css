@@ -6,10 +6,8 @@
 
 #schedule{
     padding: 181px 0 181px 0;
-    background: url("../../assets/complete-wavy.svg") 50% 0% repeat;
-    /*
-    url("../../assets/complete-wavy.svg") right -921.33px;
-    */
+    background: url("../../assets/wavy-background.svg");
+    background-size: cover;
 }
 
 #text{
