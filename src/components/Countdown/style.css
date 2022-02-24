@@ -1,0 +1,42 @@
+#countdown-wrapper {
+  /* margin: 50px 120px; */
+  text-align: center;
+  padding: 0 2rem;
+
+}
+
+#countdown {
+  text-transform: uppercase;
+  font-size: 400%;
+  color: #A5712E;
+}
+
+#timer {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+}
+
+#timer p {
+  font-size: 200%;
+  text-align: center;
+}
+
+.timer-element {
+  background-color: var(--sand-shadow);
+  color: var(--brown);
+  border-radius: 20px;
+  padding: 0 20px;
+  margin: 20px;
+  width: 160px;
+  height: 180px;
+}
+
+.num {
+  font-weight: 600;
+}
+
+.text {
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}

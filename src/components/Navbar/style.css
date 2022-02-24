@@ -12,14 +12,35 @@
   background: linear-gradient(180deg, #ffffff7c, #ffffff00);
 }
 
+@media (max-width: 850px) {
+  .navbar-container {
+    justify-content: center;
+  }
+}
+
 .navbar-title,
 .navbar-links a {
   margin: 0 2rem;
-  font-weight: bolder;
   font-size: 1.5em;
   transform: translateY(-50px);
   opacity: 0;
   animation: fade-in 2s cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s 1 forwards;
+}
+
+.navbar-title {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-title img {
+  height: 3rem;
+  width: 3rem;
+  margin: 1rem;
+}
+.navbar-links a {
+  font-weight: bolder;
 }
 
 .underline {

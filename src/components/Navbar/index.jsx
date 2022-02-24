@@ -1,4 +1,5 @@
 import "./style.css";
+import Logo from "../../assets/Logo.png";
 
 const links = [
   {
@@ -7,7 +8,7 @@ const links = [
   },
   {
     id: "projects",
-    displayText: "Projects",
+    displayText: "Past Projects",
   },
   {
     id: "sponsors",
@@ -19,7 +20,8 @@ const Navbar = () => {
   return (
     <div className="navbar-container">
       <a href="/" className="navbar-title">
-        TritonHacks
+        <img src={Logo} alt="" />
+        MAY 21-22, 2022
       </a>
       <div className="navbar-links">
         {links.map((link, key) => (

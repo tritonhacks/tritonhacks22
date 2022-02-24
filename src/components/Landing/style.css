@@ -1,8 +1,8 @@
 #landing-wrapper {
-  margin: 0;
+  margin: 0 0 10rem 0;
   padding: 0;
-  width: 100vw;
-  min-height: 100vh;
+  width: 100%;
+  min-height: max(700px, 100vh);
 }
 
 #landing-fg,
@@ -31,7 +31,6 @@
   margin: 0;
   color: var(--brown);
   font-size: 3.5rem;
-  text-shadow: 2px 1px 7px black;
   transform: translateY(25px);
   opacity: 0;
   animation: fade-in 1s cubic-bezier(0.075, 0.82, 0.165, 1) 0.2s 1 forwards;
@@ -56,12 +55,10 @@
   border-radius: 1rem;
   cursor: pointer;
   background: var(--sand);
-  box-shadow: 2px 2px 7px black;
 }
 
 .landing-btn:hover {
   background: var(--sand-light);
-  box-shadow: 2px 2px 14px black;
   transform: scale(1.02);
 }
 
@@ -131,25 +128,161 @@
   animation: top-wave-in 2s cubic-bezier(0.075, 0.82, 0.165, 1) 1 forwards;
 }
 
+@media (max-width: 850px) {
+  #top-wave {
+    height: 300rem;
+  }
+  #mid-wave svg {
+    height: 25rem;
+  }
+  #bot-wave svg {
+    height: 30rem;
+  }
+  #post-wave svg {
+    height: 30rem;
+  }
+}
+
 #mid-wave {
   z-index: 2;
   opacity: 0;
   top: -50%;
-  animation: ocean-motion 5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s 1
-    forwards;
 }
 
 #bot-wave {
   z-index: 1;
   opacity: 0;
   top: -30%;
-  animation: ocean-motion 5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s 1
-    forwards;
 }
 
 #post-wave {
   z-index: 0;
   opacity: 0;
   top: -30%;
+}
+
+.move-wave {
+  animation: ocean-motion 5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s 1
+    forwards;
+}
+.wet-sand {
   animation: wet-sand 5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s 1 forwards;
+}
+
+#sandCastle,
+#beachBall,
+#surfboard,
+#bird,
+#shell1,
+#shell2,
+#fish-1,
+#fish-2,
+#fish-3 {
+  position: absolute;
+}
+
+#sandCastle {
+  top: 80%;
+  left: 50%;
+  height: 10rem;
+  width: 10rem;
+}
+
+#beachBall {
+  top: 75%;
+  left: 75%;
+  height: 10rem;
+  width: 10rem;
+}
+
+#surfboard {
+  left: -12rem;
+  top: 50%;
+  height: 50rem;
+  width: 50rem;
+}
+
+#bird {
+  left: 10%;
+  top: 50%;
+  height: 7rem;
+  width: 7rem;
+}
+
+#shell1 {
+  left: 2rem;
+  top: 42%;
+  transform: rotate(120deg);
+  height: 3rem;
+  width: 3rem;
+}
+
+#shell2 {
+  right: 10%;
+  top: 45%;
+  transform: rotate(100deg);
+  height: 4rem;
+  width: 4rem;
+}
+
+#fish-1 {
+  top: 5%;
+  right: 10%;
+  animation: 6s swim infinite;
+}
+
+#fish-2 {
+  top: 3%;
+  left: 20%;
+  animation: 5s fade infinite alternate-reverse;
+}
+
+#fish-3 {
+  top: 6%;
+  left: 60%;
+  width: 3rem;
+  height: 3rem;
+  animation: 3s bobbing infinite alternate-reverse;
+}
+
+@media (max-width: 750px) {
+  #sandCastle {
+    display: none;
+  }
+}
+
+@keyframes swim {
+  0% {
+    transform: translateX(-50px) scaleX(-1);
+  }
+  40% {
+    transform: translateX(50px) scaleX(-1);
+  }
+  50% {
+    transform: translateX(50px) scaleX(1);
+  }
+  90% {
+    transform: translateX(-50px) scaleX(1);
+  }
+  100% {
+    transform: translateX(-50px) scaleX(-1);
+  }
+}
+
+@keyframes bobbing {
+  0% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
 }
