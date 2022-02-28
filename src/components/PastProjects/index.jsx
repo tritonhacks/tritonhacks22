@@ -18,7 +18,9 @@ const PastProjects = () => {
         <ProjectCard name="Location Comparison" id="location" image={project3} link="https://devpost.com/software/location-comparison"
         description="In today’s restaurant and hotel market, it’s hard to find the best meal for the best price. Introducing Location Comparison, your one-stop shop for finding restaurants and hotels in different cities."/>
       </div>
-      <a href="https://tritonhacks-2021.devpost.com/project-gallery" id="see-more">see more projects</a>
+      <div id="button-container">
+        <a href="https://tritonhacks-2021.devpost.com/project-gallery" id="see-more-btn">see more projects</a>
+      </div>
     </section>
   );
 };
