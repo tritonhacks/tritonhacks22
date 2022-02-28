@@ -1,0 +1,29 @@
+#projects{
+    background: url("../../assets/past-projects-decoration.svg") bottom;
+    background-repeat: repeat-x;
+    padding-top: 10rem;
+    padding-bottom: 40rem;
+}
+
+#project-cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#projects-header{
+    margin-left: 120px;
+}
+
+#subheader{
+    margin-left: 120px;
+}
+
+#see-more{
+    color: var(--brown);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
