@@ -6,6 +6,7 @@ import PastProjects from "./components/PastProjects";
 import Sponsors from "./components/Sponsors";
 import Countdown from "./components/Countdown";
 import Footer from "./components/Footer";
+import Schedule from "./components/Schedule";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <About />
       {/* <Prizes /> */}
       <PastProjects />
+      <Schedule />
       <Sponsors />
       <Footer />
     </div>
