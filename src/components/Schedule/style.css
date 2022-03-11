@@ -4,6 +4,10 @@
     margin: 0;
 }
 
+#calendar-iframe{
+    margin: 0px 20px 0 20px;
+}
+
 #schedule{
     padding: 181px 0 181px 0;
     background: url("../../assets/wavy-background.svg");
@@ -12,9 +16,6 @@
 
 #text{
     margin: 0 0 87px 120px;
-}
-
-h1{
     font-size: 65px;
 }
 
