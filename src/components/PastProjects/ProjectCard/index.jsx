@@ -8,7 +8,7 @@ const ProjectCard = ({ image, name, description, link, id }) => {
         <p className="name" id={id}> {name} </p>
         <p className="description">{description}</p>
       </div>
-      </a>
+    </a>
   );
 };
 
