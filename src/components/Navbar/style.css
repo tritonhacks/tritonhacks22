@@ -2,8 +2,8 @@
   align-items: center;
   display: flex;
   flex-flow: row wrap;
-  height: 4rem;
-  justify-content: space-between;
+  height: fit-content;
+  justify-content: flex-start;
   box-sizing: border-box;
   width: 100%;
   position: absolute;
@@ -12,9 +12,14 @@
   background: linear-gradient(180deg, #ffffff7c, #ffffff00);
 }
 
-@media (max-width: 850px) {
+@media (max-width: 950px) {
   .navbar-container {
+    flex-flow: column nowrap;
     justify-content: center;
+  }
+  .navbar-links {
+    font-size: 0.75em;
+    margin-top: 1rem;
   }
 }
 

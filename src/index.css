@@ -7,7 +7,7 @@
   --sand: #f3ecdc;
   --sand-light: #fff9ec;
   --sand-wet: #ccc6b6;
-  --sand-shadow: #E2D9C5;
+  --sand-shadow: #e2d9c5;
   --sand-dark: #948974;
 }
 
@@ -64,4 +64,8 @@ fade-in
   transform: translateY(25px);
   opacity: 0;
   animation: fade-in 1s cubic-bezier(0.075, 0.82, 0.165, 1) 1s 1 forwards;
+}
+
+.app-container {
+  overflow: hidden;
 }

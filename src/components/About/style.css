@@ -11,9 +11,10 @@
 }
 
 #about {
+  text-transform: uppercase;
+  font-size: 400%;
+  color: #a5712e;
   font-family: "Quicksand";
-  color: #00bae9;
-  font-size: 64px;
   margin-bottom: 0;
 }
 

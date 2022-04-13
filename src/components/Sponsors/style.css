@@ -1,10 +1,13 @@
 #sponsors-wrapper {
   margin: 20px 120px;
+  font-family: "Quicksand";
 }
 
 #sponsors,
 #partners {
-  font-size: 64px;
+  font-size: 400%;
+  text-transform: uppercase;
+  color: #a5712e;
 }
 
 #sponsor-us {
@@ -28,14 +31,15 @@
   text-align: center;
 }
 
-#sponsor-images img {
-  height: auto;
-  width: 30rem;
-  margin: 1rem;
-}
-
+#sponsor-images img,
 #partner-images img {
   height: auto;
+  max-width: 15rem;
   margin: 1rem;
-  width: 10rem;
+  cursor: pointer;
+}
+
+#sponsor-images img:hover,
+#partner-images img:hover {
+  transform: scale(1.1);
 }

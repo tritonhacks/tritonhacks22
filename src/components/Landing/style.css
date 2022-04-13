@@ -36,6 +36,12 @@
   animation: fade-in 1s cubic-bezier(0.075, 0.82, 0.165, 1) 0.2s 1 forwards;
 }
 
+@media (max-width: 768px) {
+  #landing-title {
+    font-size: 2rem;
+  }
+}
+
 #landing-btn-wrapper {
   display: flex;
   justify-content: center;
@@ -65,6 +71,7 @@
 /* Midground = static images */
 #landing-mg {
   z-index: 1;
+  overflow-x: hidden;
 }
 
 /* Background = waves, sand */
@@ -162,8 +169,7 @@
 }
 
 .move-wave {
-  animation: ocean-motion 5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s 1
-    forwards;
+  animation: ocean-motion 5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s 1 forwards;
 }
 .wet-sand {
   animation: wet-sand 5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s 1 forwards;
