@@ -7,12 +7,12 @@ const links = [
     displayText: "About",
   },
   {
-    id: "projects",
-    displayText: "Past Projects",
-  },
-  {
     id: "sponsors",
     displayText: "Sponsors",
+  },
+  {
+    id: "footer",
+    displayText: "Contact",
   },
 ];
 

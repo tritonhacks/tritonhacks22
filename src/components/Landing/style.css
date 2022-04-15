@@ -135,7 +135,7 @@
   animation: top-wave-in 2s cubic-bezier(0.075, 0.82, 0.165, 1) 1 forwards;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 900px) {
   #top-wave {
     height: 300rem;
   }

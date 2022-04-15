@@ -9,6 +9,7 @@ import s2 from "../../assets/sponsor-2.png";
 import s3 from "../../assets/sponsor-3.png";
 import s4 from "../../assets/sponsor-4.png";
 import s6 from "../../assets/sponsor-6.png";
+import s7 from "../../assets/sponsor-7.png";
 
 const Sponsors = () => {
   return (
@@ -32,6 +33,9 @@ const Sponsors = () => {
         </a>
         <a href="https://mlh.io">
           <img src={s6} alt="Major League Hacking" />
+        </a>
+        <a href="https://maxentric.com/">
+          <img src={s7} alt="MaXentric" />
         </a>
         <a href="https://www.digitalocean.com/">
           <img src={s2} alt="Digital Ocean"></img>
