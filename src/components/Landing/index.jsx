@@ -32,14 +32,14 @@ const Landing = () => {
         <img src={fishDark} alt="Fish" id="fish-2" />
         {/* <img src={fishLight} alt="Fish" id="fish-3" /> */}
         <h1 id="landing-title">TritonHacks 2022</h1>
-        <div id="landing-btn-wrapper">
+        {/* <div id="landing-btn-wrapper">
           <a href="/apply" className="landing-btn">
             Apply
           </a>
           <a href="/volunteer" className="landing-btn">
             Volunteer
           </a>
-        </div>
+        </div> */}
       </div>
 
       {/* Midground - static images */}
