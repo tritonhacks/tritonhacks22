@@ -25,6 +25,22 @@ ReactDOM.render(
           return null;
         }}
       />
+      <Route
+        exact
+        path="/code-of-conduct"
+        component={() => {
+          window.location.href = 'https://docs.google.com/document/d/15XFLu9cKmQYgjIovn3-t5Ow37imWAC_IvOzRQALUDl0/edit?usp=sharing';
+          return null;
+        }}
+      />
+      <Route
+        exact
+        path="/discord"
+        component={() => {
+          window.location.href = 'https://discord.gg/M3UaQMbSer';
+          return null;
+        }}
+      />
     </Switch>
   </Router>,
   document.getElementById("root")
