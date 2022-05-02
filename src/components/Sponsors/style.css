@@ -43,3 +43,7 @@
 #partner-images img:hover {
   transform: scale(1.1);
 }
+
+.white-logo {
+  filter: invert(1);
+}

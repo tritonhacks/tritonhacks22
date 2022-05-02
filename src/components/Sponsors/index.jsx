@@ -10,6 +10,8 @@ import s3 from "../../assets/sponsor-3.png";
 import s4 from "../../assets/sponsor-4.png";
 import s6 from "../../assets/sponsor-6.png";
 import s7 from "../../assets/sponsor-7.png";
+import s8 from "../../assets/sponsor-8.png";
+import s9 from "../../assets/sponsor-9.png";
 
 const Sponsors = () => {
   return (
@@ -36,6 +38,12 @@ const Sponsors = () => {
         </a>
         <a href="https://maxentric.com/">
           <img src={s7} alt="MaXentric" />
+        </a>
+        <a href="https://code.org/">
+          <img src={s8} alt="Code.org" />
+        </a>
+        <a href="https://create.ucsd.edu/">
+          <img className="white-logo" src={s9} alt="UCSD CREATE" />
         </a>
         <a href="https://www.digitalocean.com/">
           <img src={s2} alt="Digital Ocean"></img>
